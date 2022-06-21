@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            background-image: url(./images/bg0.jpg);
+            /*justify-content: center;
+            align-items: center;*/
+        }
+        button {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body id="content">
+    <button onclick="jc()">주축정렬!</button>
+    <button onclick="as()">보조축정렬!</button>
+    <script>
+        let bodyEl =document.getElementById("content");
+        function jc(){
+            bodyEl.style.justifyCcontent="center";
+        }
+        function as(){
+            bodyEl.style.aligenItems="center";
+        }
+    </script>
+</body>
+</html>
